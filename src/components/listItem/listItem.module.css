@@ -1,0 +1,45 @@
+.item {
+  width: calc(20% - 20px);
+  min-width: 240px;
+  aspect-ratio: 1 / 1;
+  /*background-color: #84a59d;*/
+  margin: 10px;
+  padding: 1em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  font-family: Poppins;
+  padding: 0px;
+  /*background-color: white;*/
+  resize: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.date {
+  font-size: 0.8rem;
+}
+
+.edit {
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.edit img {
+  width: 100%;
+  height: 100%;
+}

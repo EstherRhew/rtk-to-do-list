@@ -1,0 +1,60 @@
+.sidebar {
+  border-right: 1px solid #f3f2f2;
+  width: 10em;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 3em;
+  transform: scaleX(-1);
+  margin-bottom: 6em;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.colors {
+  width: 1.2em;
+  height: 1.2em;
+  background-color: orange;
+  border-radius: 50%;
+  margin-top: 2em;
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+}
+
+.colors:hover {
+  transform: scale(120%);
+}
+
+.colors:nth-child(2) {
+  background-color: #F6bd60;
+}
+
+.colors:nth-child(3) {
+  background-color: #F7ede2;
+}
+.colors:nth-child(4) {
+  background-color: #F5cac3;
+}
+.colors:nth-child(5) {
+  background-color: #84a59d;
+}
+.colors:nth-child(6) {
+  background-color: #f28482;
+}
