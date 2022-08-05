@@ -21,7 +21,7 @@ const Sidebar = () => {
     dispatch(add({
       id: list.length + 1,
       content: "",
-      date: "",
+      date: new Date().toDateString(),
       color
     }))
   }

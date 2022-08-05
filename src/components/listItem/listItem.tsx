@@ -11,7 +11,7 @@ const ListItem = ({item} : {item: any}) => {
 
   return (
     <li className={styles.item} style={{backgroundColor: item.color}}>
-      <textarea className={styles.content} disabled={false} value={content} defaultValue="" onChange={onEditTextArea}/>
+      <textarea className={styles.content} disabled={false} value={content} onChange={onEditTextArea}/>
       <div className={styles.footer}>
         <span className={styles.date}>{item.date}</span>
         <button className={styles.edit}><img src={editIcon} alt="edit"/></button>

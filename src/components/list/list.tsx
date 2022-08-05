@@ -9,10 +9,11 @@ const List = () => {
   useEffect(() => {
     console.log(list, 'list')
   }, [list])
+
   return (
     <ul className={styles.list}>
-      {list.map((item) =>
-        <ListItem item={item}/>
+      {[...list].reverse().map((item) =>
+        <ListItem item={item} key={item.id}/>
       )}
     </ul>
   );
