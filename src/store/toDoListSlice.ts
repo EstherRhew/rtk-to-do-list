@@ -1,14 +1,28 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {RootState} from "./store";
 
-interface toDoState {
+export const colorTable = {
+  orange: "#F6bd60",
+  beige: "#F7ede2",
+  lightPink: "#F5cac3",
+  green: "#84a59d",
+  pink: "#f28482"
+}
+
+export interface toDoState {
   id: number;
   content: string;
   date: string;
   color: string;
 }
 
-const initialState: toDoState[] = []
+const initialState: toDoState[] = [{
+    id: 0,
+    content: "Hello! Add your todos here!",
+    date: new Date().toDateString(),
+    color: colorTable.orange
+
+}]
 
 export const toDoListSlice = createSlice({
   name: 'toDoList',

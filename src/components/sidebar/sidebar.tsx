@@ -3,15 +3,9 @@ import styles from './sidebar.module.css';
 import logoIcon from '../../assets/images/logo_icon.png'
 import plusIcon from '../../assets/images/plus-solid.svg'
 import {useAppDispatch, useAppSelector} from "../../store/hooks";
-import {add} from "../../store/toDoListSlice";
+import {add, colorTable} from "../../store/toDoListSlice";
 
-export const colorTable = {
-  orange: "#F6bd60",
-  beige: "#F7ede2",
-  lightPink: "#F5cac3",
-  green: "#84a59d",
-  pink: "#f28482"
-}
+
 
 const Sidebar = () => {
   const list = useAppSelector((state) => state.toDoList)
@@ -19,7 +13,7 @@ const Sidebar = () => {
 
   const addToDo = (color: string) => {
     dispatch(add({
-      id: list.length + 1,
+      id: list.length,
       content: "",
       date: new Date().toDateString(),
       color
